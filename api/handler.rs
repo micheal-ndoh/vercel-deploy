@@ -1,5 +1,8 @@
 use serde_json::json;
+use std::collections::HashMap;
+use std::str::FromStr;
 use vercel_runtime::{run, Body, Error, Request, Response, StatusCode};
+mod fib;
 
 #[tokio::main]
 async fn main() -> Result<(), Error> {
