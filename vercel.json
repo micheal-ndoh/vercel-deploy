@@ -2,6 +2,21 @@
   "functions": {
     "api/handler.rs": {
       "runtime": "vercel-rust@4.0.9"
+    },
+    "api/handler_fib.rs": {
+      "runtime": "vercel-rust@4.0.9"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/api/handler/fib",
+      "dest": "/api/handler_fib.rs",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/handler",
+      "dest": "/api/handler.rs",
+      "methods": ["GET"]
+    }
+  ]
 }
