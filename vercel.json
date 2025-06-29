@@ -2,11 +2,9 @@
   "functions": {
     "api/handler.rs": {
       "runtime": "vercel-rust@4.0.9"
-      
     },
     "api/handler_fib.rs": {
       "runtime": "vercel-rust@4.0.9"
-      
     }
   },
   "routes": [

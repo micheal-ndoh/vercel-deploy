@@ -1,6 +1,5 @@
 use num_bigint::BigInt;
 use num_traits::FromPrimitive;
-use serde_json::json;
 use vercel_runtime::{run, Body, Error, Request, Response, StatusCode};
 
 pub fn fibonacci(n: i64) -> BigInt {
