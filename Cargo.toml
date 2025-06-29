@@ -1,16 +1,15 @@
 [package]
-edition = "2021"
-name = "vercel-template"
+name = "my-vercel-api"
 version = "0.1.0"
+edition = "2021"
 
 [dependencies]
-num-bigint = "0.4"
-num-traits = "0.2"
-serde_json = {version = "1", features = ["raw_value"]}
-tokio = {version = "1", features = ["macros"]}
+tokio = { version = "1", features = ["macros"] }
+serde_json = { version = "1", features = ["raw_value"] }
 # Documentation: https://docs.rs/vercel_runtime/latest/vercel_runtime
-url = "2"
-vercel_runtime = {version = "1"}
+vercel_runtime = { version = "1" }
+bigint = "4.4.3"
+num-bigint = "0.4.6"
 
 # You can specify a library for shared logic here (optional)
 # [lib]
@@ -20,10 +19,6 @@ vercel_runtime = {version = "1"}
 [[bin]]
 name = "handler"
 path = "api/handler.rs"
-
-[[bin]]
-name = "handler_fib"
-path = "api/handler_fib.rs"
 
 # Note that you need to provide unique names for each binary:
 # [[bin]]
