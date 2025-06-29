@@ -1,9 +1,7 @@
 {
-  "builds": [
-    {
-      "src": "vercel-build.sh",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "target/x86_64-unknown-linux-musl/release" }
+  "functions": {
+    "api/*.rs": {
+      "runtime": "vercel-rust@4.0.9"
     }
-  ]
+  }
 }
